@@ -1,0 +1,222 @@
+@include media-sd {
+
+    .banner{
+        background-image: url(../images/bg-header-desktop.png);
+    }
+}
+
+@include media-md {
+
+    //defaults
+    p {
+        max-width: 768px;
+        line-height: 1.8rem;
+        margin-top: 2rem;
+    }
+
+    h4 {
+        font-size: 1.5rem;
+    }
+
+    .article-heading {
+        font-size: 2rem;
+    }
+
+
+    // history section 
+    .history {
+        .main-heading {
+            font-size: 3rem;
+        }
+        p {
+            font-size: 1.2rem;
+        }
+    }
+    .btn-container {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        margin-top: 3rem;
+        .btn {
+            margin: 0 0.5rem;
+            max-width: 243px;
+        }
+    }
+
+    // ==== track section === 
+
+    .track {
+        p {
+            font-size: 1.1rem;
+        }
+    }
+
+    .article-title {
+
+        margin-bottom: 7rem;
+        h2 {
+            
+        }
+        p {
+            margin: 0;
+        }
+    }
+
+    .blacklists-container, .text-snippets-container, .sneak-preview-container {
+        max-width: 550px;
+    }
+}
+
+
+
+
+
+
+
+
+// ====== LARGE DEVICES ================
+
+
+@include media-lg {
+    // == track text section ====
+    .track-text-content {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        column-gap: 2rem;
+        margin-top: 3rem;
+        
+
+    }
+
+    .icloud-container, .quick-search-container, .complete-history-container {
+        margin: 0;
+        padding: 0;
+
+        h4 {
+            margin-bottom: 1rem;
+            padding: 0;
+        }
+
+        p {
+            margin: 0;
+            padding: 0;
+        }
+    }
+
+     // ==== access ===== 
+     .supercharge-content-container {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+       column-gap: 2rem;
+        max-width: 1040px;
+
+        p {
+            margin: 1rem
+        }
+    }
+
+    // ==== logos ======
+
+    .brand-logos {
+        flex-direction: row;
+        justify-content: center;
+        padding-bottom: 4rem;
+      
+        .logo {
+            max-width: 100%;
+        }
+    }
+
+
+    // ===== footer =====
+
+    footer {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        column-gap: 2rem;
+        width: 100%;
+        align-items: center;
+    
+
+        .far {
+            margin: 0;
+            padding: 0;
+        }
+
+        .socials {
+            padding: 0;
+            margin: 0;
+
+            li {
+                .fab {
+                    font-size: 1.5rem;
+                }
+            }
+        }
+
+        .list-of-links {
+           display: grid;
+           grid-template-columns: 1fr 1fr 1fr;
+
+           .link {
+               a {
+                   font-size: 0.7rem;
+               }
+           }
+        }
+    }
+
+}
+
+
+
+
+
+// ======= XL DEVICESSSSS ==========
+
+@include media-xl {
+
+    // ==== track section === 
+
+   .devices {
+       width: 70%;
+   }
+
+    .track-content-container {
+        display: flex;
+        flex-direction: row;
+     
+    }
+
+    .desktop {
+        width: 100%;
+        margin-left: -18%;
+    }
+
+    .track-text-content {
+        display: flex;
+        flex-direction: column;
+        padding-bottom: 4rem;
+    }
+
+    .icloud-container, .quick-search-container, .complete-history-container {
+        margin-bottom: 2rem;
+        width: 80%;
+        margin-left: 3rem;
+
+        h4 {
+            text-align: left;
+            margin: 0;
+            margin-bottom: 0.5rem;
+            font-size: 1.1rem;
+        }
+        p {
+            text-align: left;
+            margin: 0;
+            font-size: 0.9rem;
+        }
+
+        
+    }
+
+}

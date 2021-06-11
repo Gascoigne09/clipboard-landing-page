@@ -1,0 +1,77 @@
+@import url('https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@400;600&display=swap');
+
+$color-cyan: hsl(171, 66%, 44%);
+$color-blue: hsl(233, 100%, 69%);
+
+$color-dark: hsl(210, 10%, 33%);
+$color-grey: hsl(201, 11%, 66%);
+
+$font-weight: (
+    "normal": 400,
+    "thick": 600
+);
+
+//standards 
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 18px;
+    font-family: 'Bai Jamjuree', sans-serif;
+    color: $color-grey;
+}
+
+section {
+    width: 100%;
+
+}
+
+article {
+    width: 80%;
+
+}
+
+h2, h4 {
+    font-weight: map-get($font-weight, thick);
+    color: $color-dark;
+}
+p {
+    font-weight: map-get($font-weight, normal);
+    color: $color-grey;
+    line-height: 1.2rem;
+    font-size: 0.85rem
+}
+
+h2, h4, p {
+    text-align: center;
+    word-spacing: 0.05rem;
+}
+
+
+//media queries
+
+@mixin media-sd {
+    @media screen and(min-width: 400px) {
+        @content;
+    }
+}
+
+@mixin media-md {
+    @media screen and (min-width: 768px) {
+        @content;
+    }
+}
+
+@mixin media-lg {
+    @media screen and (min-width: 1024px) {
+        @content;
+    }
+}
+
+@mixin media-xl {
+    @media screen and (min-width: 1440px) {
+        @content;
+    }
+}
+
